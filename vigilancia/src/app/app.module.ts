@@ -19,6 +19,7 @@ import { TarjetasAddComponent } from './tarjetas/tarjetas-add/tarjetas-add.compo
 import { EventosAddComponent } from './eventos/eventos-add/eventos-add.component';
 import { EventosListComponent } from './eventos/eventos-list/eventos-list.component';
 import { PagesComponent } from './shared/pages/pages.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PagesComponent } from './shared/pages/pages.component';
     TarjetasAddComponent,
     EventosAddComponent,
     EventosListComponent,
-    PagesComponent
+    PagesComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

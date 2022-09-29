@@ -11,7 +11,10 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+  }
+
+  signout(): void{
+    console.log("sign out");
   }
 
 }
