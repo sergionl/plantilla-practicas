@@ -26,6 +26,7 @@ import {EventosListComponent} from './eventos/eventos-list/eventos-list.componen
 
 const routes: Routes = [
   //auth
+  {path: '', redirectTo: '/login',pathMatch: 'full'},
   {path: 'login',component: LoginComponent},
   {path: 'register',component: RegisterComponent},
   {path:'forgotPassword',component: ForgotPasswordComponent},
