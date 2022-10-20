@@ -20,6 +20,9 @@ import { EventosAddComponent } from './eventos/eventos-add/eventos-add.component
 import { EventosListComponent } from './eventos/eventos-list/eventos-list.component';
 import { PagesComponent } from './shared/pages/pages.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { InicioComponent } from './inicio/inicio/inicio.component';
+import { ReporteComponent } from './reporte/reporte/reporte.component';
+import { DesconectarComponent } from './auth/desconectar/desconectar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
     EventosAddComponent,
     EventosListComponent,
     PagesComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    InicioComponent,
+    ReporteComponent,
+    DesconectarComponent
   ],
   imports: [
     BrowserModule,

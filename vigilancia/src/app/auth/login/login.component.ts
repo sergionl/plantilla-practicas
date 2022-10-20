@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   tryLogin(): void{
     console.log("login");
-    this.router.navigate(['dashboard']);
+    this.router.navigate(['dashboard/inicio']);
     
   }
 

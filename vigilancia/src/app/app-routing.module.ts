@@ -5,9 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from './auth/login/login.component';
 import {RegisterComponent} from './auth/register/register.component';
 import {ForgotPasswordComponent} from './auth/forgot-password/forgot-password.component';
+import {DesconectarComponent} from './auth/desconectar/desconectar.component';
 //shared
 import {NavbarComponent} from './shared/navbar/navbar.component';
 import {PagesComponent} from './shared/pages/pages.component';
+//inicio
+import {InicioComponent} from './inicio/inicio/inicio.component';
 //usuario
 import {UsuarioListComponent} from './usuarios/usuario-list/usuario-list.component';
 //edificios
@@ -23,6 +26,8 @@ import {TarjetasListComponent} from './tarjetas/tarjetas-list/tarjetas-list.comp
 //eventos
 import {EventosAddComponent} from './eventos/eventos-add/eventos-add.component';
 import {EventosListComponent} from './eventos/eventos-list/eventos-list.component';
+//reporte
+import {ReporteComponent} from './reporte/reporte/reporte.component';
 
 const routes: Routes = [
   //auth
@@ -30,8 +35,12 @@ const routes: Routes = [
   {path: 'login',component: LoginComponent},
   {path: 'register',component: RegisterComponent},
   {path:'forgotPassword',component: ForgotPasswordComponent},
+  {path:'desconectado',component:DesconectarComponent},
+  {path:'reporte',component:ReporteComponent},
   {path: 'dashboard',component: PagesComponent,
   children:[
+    //inicio
+    {path:'inicio',component: InicioComponent},
     //usuarios
     {path:'usuarios',component: UsuarioListComponent},
     //edificios
